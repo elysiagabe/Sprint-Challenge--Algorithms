@@ -24,4 +24,4 @@ if the egg does not break, find the floor between the floor you just threw the e
 
 Repeat this process until you are moving by just one floor. If the egg breaks and you move down one floor and the egg doesn't break, the previous floor is floor f. If the egg does not break and you move up one floor and the egg breaks, your current floor is floor f. 
 
-The runtime complexity of this solution would be O(log n)
+The runtime complexity of this solution would be O(log n), as it is based on binary search and you are essentially halving the amount of floors you need to search to find floor f each time you throw an egg. 
