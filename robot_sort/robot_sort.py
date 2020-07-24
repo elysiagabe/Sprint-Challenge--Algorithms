@@ -97,19 +97,14 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        # Initial swap --> swap_item() ??????? is this necessary???
-
         # first turn light on --> this will indicate robot is sorting & be used in while loop
         self.set_light_on()
-        # initial swap
-        # self.swap_item()
 
         # while light is on: 
         while self.light_is_on():
-            # TO GET OUT OF WHILE LOOP: if compare_item() == None and can_move_right() == False, then swap the items and turn light off --> list is done being sorted
+            # TO GET OUT OF WHILE LOOP: if compare_item() == None and can_move_right() == False, then turn light off --> list is done being sorted
             while self.can_move_right() == False:
                 if self.compare_item() is None: 
-                    #self.swap_item()
                     self.set_light_off()
                     return self._list
 
